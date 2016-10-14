@@ -1,4 +1,4 @@
-package com.kallinikos.tech.sweetdeals;
+package com.kallinikos.tech.sweetdeals.app;
 
 import android.content.Context;
 import android.os.AsyncTask;

@@ -12,4 +12,15 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+
+        <item name="android:textColorPrimary">@android:color/white</item> <!-- Text color of the toolbar title -->
+        <item name="android:textColorSecondary">@android:color/white</item><!-- Color of overflow menu (3 dots icon and color of navigation drawer-->
+    </style>
+
+    <style name="PopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">#9E9E9E</item><!-- Text color of overflow menu items -->
+        <item name="android:background">#fffcfff6</item><!-- Background of overflow menu -->
+
+    </style>
 </resources>
