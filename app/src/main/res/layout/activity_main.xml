@@ -13,11 +13,16 @@
             android:id="@+id/toolbar"
             layout="@layout/toolbar"/>
         
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recyclerView"
+
+
+        <fragment
+            android:id="@+id/catFragment"
+            class="com.kallinikos.tech.sweetdeals.app.CategoryFragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
-        
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_category">
+
+        </fragment>
     </LinearLayout>
     
     <fragment
