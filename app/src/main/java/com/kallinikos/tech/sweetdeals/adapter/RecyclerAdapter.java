@@ -1,7 +1,9 @@
 package com.kallinikos.tech.sweetdeals.adapter;
 
 import android.content.Context;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +12,7 @@ import android.widget.TextView;
 
 import com.kallinikos.tech.sweetdeals.R;
 import com.kallinikos.tech.sweetdeals.model.Category;
+import com.nostra13.universalimageloader.core.ImageLoader;
 
 import java.util.List;
 
@@ -39,6 +42,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
     public void onBindViewHolder(MyViewHolder holder, int position) {
         Category currentObj = mData.get(position);
         holder.setData(currentObj);
+        Log.d(TAG, "onBindViewHolder: ++++++++++++++++++++");
+        ImageLoader.getInstance().displayImage(Uri.parse("http://sweetdealsapp.co.nf/img/bag.png").toString(),holder.imgThumb);
     }
 
     @Override

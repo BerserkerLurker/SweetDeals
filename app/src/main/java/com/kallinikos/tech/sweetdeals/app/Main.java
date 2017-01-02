@@ -14,6 +14,9 @@ import android.widget.Toast;
 
 import com.kallinikos.tech.sweetdeals.R;
 import com.kallinikos.tech.sweetdeals.adapter.RecyclerAdapter;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
 public class Main extends AppCompatActivity {
 
@@ -28,6 +31,17 @@ public class Main extends AppCompatActivity {
         setUpDrawer();
 
         //setUpRecyclerView();
+
+        //----UniversalImageLoaderSetup----
+        DisplayImageOptions displayImageOptions = new DisplayImageOptions.Builder()
+                .cacheInMemory(true)
+                .cacheOnDisk(true)
+                .build();
+        ImageLoaderConfiguration imageLoaderConfiguration = new ImageLoaderConfiguration.Builder(getApplicationContext())
+                .defaultDisplayImageOptions(displayImageOptions)
+                .build();
+        ImageLoader.getInstance().init(imageLoaderConfiguration);
+        //----UniversalImageLoaderSetup----
 
 
     }

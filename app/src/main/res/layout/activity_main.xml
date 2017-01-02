@@ -15,14 +15,14 @@
         
 
 
-        <fragment
+        <!--<fragment
             android:id="@+id/catFragment"
             class="com.kallinikos.tech.sweetdeals.app.CategoryFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:layout="@layout/fragment_category">
 
-        </fragment>
+        </fragment>-->
     </LinearLayout>
     
     <fragment
